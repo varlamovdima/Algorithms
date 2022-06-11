@@ -18,7 +18,8 @@ int firstNonRepeatingCharacter(string str){
 				if(str[i]==str[j])
 					count++;
 			}
-		
+		if(count==1)
+			return i;
 		arr.push_back(count);
 		count = 0;
 	}
